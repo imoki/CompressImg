@@ -34,7 +34,7 @@ def compress(infile, outfile, sizeKB, xout, step=10, quality=80):	# 图片压缩
 def readimage(dirin, dirout, sizeKB, xout):	# 读取图片，输出图片
 	if os.path.exists(dirin):	# 若输入图片的文件夹存在，否则建立文件夹
 		if not os.path.exists(dirout):	# 若输出图片的文件夹不存在则建立文件夹
-			os.mkdi(dirout)
+			os.mkdir(dirout)
 		for file in os.listdir(dirin):	# 读取输入图片的文件夹中的每一张图片
 			print(file)
 			infile = dirin + '/' + file
